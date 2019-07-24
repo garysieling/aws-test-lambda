@@ -1,6 +1,8 @@
 set -e
 set -o xtrace
 
+npm install
+
 zip -r lambda.zip .
  
 aws lambda create-function \
